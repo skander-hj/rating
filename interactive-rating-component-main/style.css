@@ -100,10 +100,10 @@ h1{
     background-color: hsl(25, 97%, 53%) ;
     border: none;
     border-radius: 10px;
-    min-height: 2rem;
+    min-height: 80%;
     width: 80%;
+    margin-bottom: 5px;
 }
-
 
 .rating button:hover{
     background-color: hsl(25, 97%, 53%);

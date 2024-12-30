@@ -15,14 +15,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: 400;
+    
 }
 
 body{
     font-family: "Overpass",sans-serif;
-    font-size: 15px;
     background-color:hsl(216, 12%, 8%) ;
     justify-content: center;
     display: flex;
+    font-size: 15px;
+
 }
 
 .direction
@@ -32,17 +35,23 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
+    
 }
 
 h1{
     color: hsl(0, 0%, 100%);
     justify-self: start;
     margin-left: 10px;
+    font-weight: 700;
+    font-size: 15px;
 }
 
 .box
-{   
-    background-color: hsl(213, 30%, 21%);
+{
+    
+    
+    background-color: rgba(29,36,46,255);
     color:hsl(217, 12%, 63%);
     display: grid;
     justify-content: center;
@@ -51,10 +60,15 @@ h1{
     border-radius: 20px;
     height: 50vh;
     aspect-ratio: 1/1;
+    padding: 5px;
+    padding-bottom: 10px;
+    
+    row-gap: 2vh;
+    
 }
 
 .box2{
-    background-color: hsl(213, 30%, 21%);
+    background-color:rgba(29,36,46,255);
     color:hsl(217, 12%, 63%);
     display: none;
     justify-content: center;
@@ -63,35 +77,51 @@ h1{
     border-radius: 20px;
     height: 50vh;
     aspect-ratio: 1/1;
+    padding: 10px;
 }
 .rating{
-    width: 100%;
+    
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 8px;
+    max-width: 100%;
+    padding: 0;
+    
+    
+    
 }
 .rating button{
     border-radius: 50%;
     aspect-ratio: 1/1;
-    width: 25px;
-    gap: 8px;
+    width: 20%;
+    height: 20%;
+    
     border: none;
-    background-color: hsl(217, 12%, 63%);
-    margin-right: 1rem;
-    margin-left: 1rem;
+    background-color: rgba(36,45,54,255);
+
+    
+
+    
+
 }
 
 .box p{
     text-align: start;
     margin-left: 10px;
+    font-weight: 400;
+    font-size: 15px;
 }
 .cstar{
     display: flex;
-    background-color: hsl(217, 12%, 63%);
-    width: 2rem;
+    background-color: rgba(40,47,57,255);
+    min-width: 22px;
+    max-width: 10%;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    padding: 9px;
-    margin-left: 20px;
+    padding: 5px;
+    margin-left: 6px;
 }
 
 .btnsubmit
@@ -99,12 +129,35 @@ h1{
     justify-self: center;
     background-color: hsl(25, 97%, 53%) ;
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;
     min-height: 80%;
     width: 80%;
     margin-bottom: 5px;
+    margin-bottom: 5%;
+    font-weight: 700;
+    font-size: 15px;
 }
+.btnsubmit :hover{
+    font-weight: bolder;
+}
+
 
 .rating button:hover{
     background-color: hsl(25, 97%, 53%);
+    font-weight: bold;
+}
+
+.rating button:onclick{
+    background-color: hsl(25, 97%, 53%);
+    font-weight: bold;
+}
+
+.ty{
+    justify-self: center;
+    
+}
+.box2 h1,p
+{
+    justify-self: center;
+
 }
